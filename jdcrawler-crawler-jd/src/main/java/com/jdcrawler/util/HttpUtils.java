@@ -92,7 +92,7 @@ public class HttpUtils {
                 //使用uuid生成图片名
                 String imageName = UUID.randomUUID().toString() + extName;
                 //声明输出的文件
-                OutputStream outputStream = new FileOutputStream(new File("images/"+imageName));
+                OutputStream outputStream = new FileOutputStream(new File("../images/"+imageName));
                 //使用响应体输出文件
                 response.getEntity().writeTo(outputStream);
                 //返回生成的图片名
